@@ -1,0 +1,31 @@
+<ion-content class="sign" padding>
+  <div ion-fixed padding class="appForm" margin-bottom style="position: absolute !important;top:0%;bottom: 0%;left:0;margin-bottom: 1% !important; height: auto !important">
+   
+    <ion-header no-border>
+      <ion-navbar>
+        <ion-title>Register</ion-title>
+      </ion-navbar>
+    </ion-header>
+
+    <ion-list style="margin-top: 43% !important;">
+
+      <ion-item>
+        <ion-icon name="ios-mail-outline" item-left></ion-icon>
+        <ion-input type="text" [(ngModel)]="username" name="username" placeholder="Username" clearInput></ion-input>
+      </ion-item>
+
+      <ion-item style="position: relative !important;">
+        <ion-icon name="ios-lock-outline" item-left></ion-icon>
+        <ion-input class="inpt-field" [(ngModel)]="email" name="email"  style=" font-size: 18px !important" type="email" placeholder="Email" clearInput></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="md-key" item-left></ion-icon>
+        <ion-input type="password"  [(ngModel)]="password" name="password" placeholder="Password" clearInput></ion-input>
+      </ion-item>
+
+      <button ion-button block class="login-button" margin-vertical (click)="RegisterUser()">Sign up</button>
+    </ion-list>
+
+  </div>
+</ion-content>

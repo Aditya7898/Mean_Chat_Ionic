@@ -1,0 +1,5 @@
+<ion-tabs>
+    <ion-tab [root]="tabRoot1" tabIcon="globe" tabTitle="Streams" (ionSelect)="ClickTab()"></ion-tab>
+    <ion-tab [root]="tabRoot2" tabIcon="home" [tabBadge]="messageCount > 0 ? messageCount : null" tabTitle="Chat"></ion-tab>
+    <ion-tab [root]="tabRoot3" tabIcon="globe" tabTitle="Home"></ion-tab>
+  </ion-tabs>

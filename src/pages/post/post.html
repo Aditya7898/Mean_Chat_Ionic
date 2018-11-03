@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="GoBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Add Post</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-textarea class="message" [(ngModel)]="post" placeholder="add new post..."></ion-textarea>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-row>
+          <ion-col col-4>
+            <button class="imgBt" ion-button block item-start (click)="SelectImage()">
+              Add Image
+            </button>
+          </ion-col>
+          <ion-col col-8>
+            <button class="addPost" ion-button block (click)="AddPost()">
+              Add Post
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
